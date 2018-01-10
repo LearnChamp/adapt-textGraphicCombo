@@ -1,0 +1,30 @@
+{{import_globals}}
+<div class="text-graphic-inner component-inner" role="region" aria-label="{{_globals._components._textGraphicCombo.ariaRegion}}">
+    {{> component this}}
+    <div class="text-graphic-widget component-widget {{_textAreaLayout}} clearfix">
+      <div class="text-mobile-title">
+        <div class="text-mobile-title-inner">
+          {{{a11y_text textMobileTitle}}}
+        </div>
+      </div>
+      <div class="graphic-area" style="width: {{_graphicColumn}}%">
+        <div class="graphic-area-inner">
+          <img src="{{_graphic._src}}" alt="{{_graphic.alt}}" {{#if _graphic.alt}}tabindex="0"{{/if}} />
+        </div>
+      </div>
+      <div class="text-area" style="width: {{_textColumn}}%">
+        <div class="text-area-inner">
+          <div class="text-area-title">
+            <div class="text-area-title-inner">
+              {{{compile_a11y_text textAreaTitle this}}}
+            </div>
+          </div>
+          <div class="text-area-body">
+            <div class="text-area-body-inner">
+              {{{compile_a11y_text textAreaBody this}}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div

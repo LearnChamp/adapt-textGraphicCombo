@@ -1,0 +1,117 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "Below is a component with a text section with an related image.",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "textAreaTitle": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Title text displayed on Desktop",
+      "translatable": true
+    },
+    "textMobileTitle": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Title text displayed on mobile",
+      "translatable": true
+    },
+    "textAreaBody": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "TextArea",
+      "validators": [],
+      "help": "This is the Body text",
+      "translatable": true
+    },
+    "_textAreaLayout": {
+      "title": "Text Area Layout",
+      "type": "string",
+      "required": false,
+      "default": "right",
+      "inputType": {"type": "Select", "options": ["left", "right"]},
+      "validators": ["required"],
+      "help": "Defines the layout of the text area",
+      "translatable": true
+    },
+    "_textColumn": {
+      "title": "Text Column",
+      "type": "string",
+      "required": false,
+      "default": "60",
+      "inputType": "Number",
+      "validators": [],
+      "help": "Width in percent of the text area",
+      "translatable": true
+    },
+    "_graphicColumn": {
+      "title": "Graphic Column",
+      "type": "string",
+      "required": false,
+      "default": "40",
+      "inputType": "Number",
+      "validators": [],
+      "help": "Width in percent of the graphic area",
+      "translatable": true
+    },
+    "_graphic": {
+      "type": "object",
+      "required": true,
+      "title": "Graphic",
+      "properties":{
+        "alt": {
+          "type":"string",
+          "required":false,
+          "default": "",
+          "title": "Alternative Text",
+          "inputType": "Text",
+          "validators": [],
+          "help": "The alternative text for this image",
+          "translatable": true
+        },
+        "_src": {
+          "title": "Graphic",
+          "type":"string",
+          "required":true,
+          "default": "",
+          "inputType": "Asset:image",
+          "validators": ["required"],
+          "help": "The source for the graphic."
+        }
+      }
+    }
+  }
+}

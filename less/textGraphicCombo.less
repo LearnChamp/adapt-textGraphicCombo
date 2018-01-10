@@ -1,0 +1,72 @@
+
+.text-graphic-inner {
+
+    @width-for-device-medium: 100%!important;
+
+    .text-graphic-widget {  
+        .text-mobile-title-inner{
+            .item-title;
+            display: none;
+            @media screen and (max-width: (@device-width-medium)) {
+                display: block;
+                padding: 10px;
+            }
+        }
+
+        .graphic-area {
+            height: 100%;
+            @media screen and (max-width: (@device-width-medium)) {
+                width: @width-for-device-medium;
+            }
+        }
+
+        .text-area {
+            width: 100%;
+            .text-area-inner {
+                .text-area-title {
+                    .text-area-title-inner{
+                        .item-title;
+                    }
+                }
+            }
+            @media screen and (max-width: (@device-width-medium)){
+                width: @width-for-device-medium;
+                float: none;
+                div.text-area-inner {
+                    padding: 0;
+                    .text-area-title {
+                        .text-area-title-inner{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.left {
+            .text-area {
+                float: left;
+            }
+            .text-area-inner {
+                padding: 0 10px 0 0;
+                }
+
+            .graphic-area {
+                float: right;
+            }
+        }
+
+        &.right {
+            .text-area {
+                float: right;
+            }
+            .text-area-inner {
+                    padding: 0 0 0 10px;
+                }
+
+            .graphic-area {
+                float: left;
+            }
+        }
+    }
+}

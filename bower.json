@@ -1,0 +1,20 @@
+{
+  "name": "adapt-textGraphicCombo",
+  "version": "1.0.0",
+  "framework": ">=2",
+  "homepage": "https://github.com/LearnChamp/text-graphic-combo",
+  "repository": "git://github.com/LearnChamp/text-graphic-combo",
+  "issues": "https://github.com/LearnChamp/text-graphic-combo/issues",
+  "displayName" : "Text Graphic Combo",
+  "component" : "textGraphicCombo",
+  "assetFields" : [
+    ""
+  ],
+  "description": "Component that displays a text and a graphic. ",
+  "main": "/js/adapt-textGraphicCombo.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3"
+}

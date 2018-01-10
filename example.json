@@ -1,0 +1,22 @@
+{
+	"_id": "c-25",
+	"_parentId": "b-15",
+	"_type": "component",
+	"_component": "textGraphicCombo",
+	"_classes": "",
+	"_layout": "full",
+	"title": "textGraphicCombo",
+	"displayTitle": "Text Graphic Combo",
+	"body": "",
+	"instruction": "",
+	"textAreaTitle": "Lorem Area Title",
+	"textMobileTitle": "Lorem Mobile Title",
+	"textAreaBody": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+	"_textAreaLayout": "right", // left| right
+	"_textColumn": 70,
+	"_graphicColumn": 30,
+	"_graphic": {
+		"_src": "course/en/images/single_width_small.jpg",
+		"alt": "Placeholder graphic."
+	}
+}
